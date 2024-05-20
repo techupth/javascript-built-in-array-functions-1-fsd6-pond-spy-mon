@@ -6,7 +6,24 @@ const students = [
 ];
 
 function getAverageStudentScore(students) {
-  // Start coding here
+  return students.reduce(function (accumulator, student){
+    return accumulator + student.score / 4
+  }, 0)
 }
 
-getAverageStudentScore(students); // Output: 87.5
+console.log(getAverageStudentScore(students));
+
+
+// let getAverageStudentScore = students.reduce(function (accumulator, student) {
+//   return accumulator + student.score / 4
+// }, 0)
+//   // Start coding here
+ 
+  
+// console.log(getAverageStudentScore); ; // Output: 87.5
+
+
+
+
+
+
